@@ -235,7 +235,7 @@ class Patchset(object):
         if self.try_run:
             # comment to bug with link to the try run on tbpl and in hg
             self.add_comment('\tDestination: '
-                    'http://hg.mozilla.org/try/pushloghtml?changeset=%s'
+                    'https://hg.mozilla.org/try/pushloghtml?changeset=%s'
                         % (revision))
             self.add_comment('Try run started, revision %s.'
                     ' To cancel or monitor the job, see: %s?tree=%s&rev=%s'
@@ -244,7 +244,7 @@ class Patchset(object):
         else:
             # comment to bug with push information
             self.add_comment('\tDestination: '
-                    'http://hg.mozilla.org/%s/pushloghtml?changeset=%s'
+                    'https://hg.mozilla.org/%s/pushloghtml?changeset=%s'
                             % (self.branch, revision))
             self.add_comment('Successfully applied and pushed patchset.\n'
                     '\tRevision: %s' % (revision))
